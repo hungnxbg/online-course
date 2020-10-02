@@ -1,12 +1,53 @@
+.menu_bar {
+	background-color: #fff;
+}
+
 .branch {
 	font-size: 2rem;
 }
 
 .menu_aligment {
-    margin-left: 5rem;
-    margin-right: 5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	max-width: 110rem;
+	height: 6rem;
 }
 
 .menu_content {
-    display: inline-block;
+	display: inline-block;
+}
+
+.menu_item {
+	width: 92rem;
+}
+
+.search_box {
+	width: 16rem;
+	height: auto;
+	
+	.search_icon {
+		top: 1.5rem;
+    right: 1rem;
+	}
+
+	input {
+		background: #f5f5f5 !important;
+    border: 1px solid transparent;
+		border-radius: 0.25rem;
+		height: 4rem;
+		
+		&::placeholder {
+			transition: .5s;
+		}
+
+		&:focus {
+			border-color: transparent;
+			box-shadow: 0 0 0 0.2rem rgb(243 199 199 / 25%);
+
+			&::placeholder {
+				color: transparent;
+				transition: .5s;
+			}
+		}
+	}
 }
