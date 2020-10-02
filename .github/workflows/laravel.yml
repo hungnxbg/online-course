@@ -28,7 +28,7 @@ jobs:
           php-version: 7.2
           extensions: mbstring, bcmath
       - name: copy .env
-        run: cp .env.ci .env  
+        run: cp .env.example .env  
       - name: composer install
         run: composer install
 
@@ -46,10 +46,10 @@ jobs:
               ./vendor/bin/phpmd ${changed_file} text phpmd.xml
             done
       
-      # Unit test
-      - name: generate key
-        run: php artisan key:generate
-      - name: Run unit tests
-        # Run unit test below ex. ./vendor/bin/phpunit
-        run: |
-          php artisan migrate --env=ci
+#       # Unit test
+#       - name: generate key
+#         run: php artisan key:generate
+#       - name: Run unit tests
+#         # Run unit test below ex. ./vendor/bin/phpunit
+#         run: |
+#           php artisan migrate --env=example
