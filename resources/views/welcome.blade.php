@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Styles -->
         <style>
@@ -96,5 +97,44 @@
                 </div>
             </div>
         </div>
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/1920x1080" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1920x1080" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1920x1080" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    <script src="{{ asset('js/app.js') }}" ></script>
     </body>
 </html>
